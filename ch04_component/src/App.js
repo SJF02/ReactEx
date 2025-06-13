@@ -6,7 +6,8 @@ import "./App.css";
 // import MyComponent from "./ex03_props/MyComponent";
 // import Library from "./ex04_props/Library";
 // import MyComponent from "./ex05_arrow/MyComponent";
-import MyComponent from "./ex06_destructing/MyComponent";
+// import MyComponent from "./ex06_destructing/MyComponent";
+import Team from "./ex07_composition/Team";
 
 function App() {
   return (
@@ -35,10 +36,14 @@ function App() {
     </>
     */
 
+    /*
     <>
       <MyComponent name='리액트'>React Programming</MyComponent>
       <MyComponent name='React, Vue'>컴포넌트 제작</MyComponent>
     </>
+    */
+
+    <Team title="재능 기부 교류 서비스" />
   );
 }
 
