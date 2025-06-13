@@ -4,7 +4,8 @@ import './App.css';
 // import Child from './ex02_op/Child';
 // import Child from './ex03_and/Child';
 // import Child from './ex04_or/Child';
-import Child from './ex05_style/Child';
+// import Child from './ex05_style/Child';
+import Child from './ex06_classname/Child';
 
 function App() {
   return (
