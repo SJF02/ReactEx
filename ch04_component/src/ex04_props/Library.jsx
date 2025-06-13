@@ -1,14 +1,14 @@
 import Book from "./Book";
 
 function Library(props) {
-  const style = {
-    backgroundColor: "black",
+const style = {
+    background: "black",
     color: "aqua",
     fontSize: "48px",
     fontWeight: "bold",
     padding: 16,
     borderBottom: "2px solid blue"
-  };
+};
 
   return (
     <div style={style}>
