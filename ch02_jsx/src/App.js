@@ -1,5 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { Fragment } from "react/jsx-runtime";
 
 /*
 jsx = js + eXtension
@@ -21,11 +22,39 @@ function App() {
   );
   */
 
+  /*
     return (
     <>
       <h1>리액트 안녕</h1>
       <h2>잘 동작하니?</h2>
     </>
+  */
+
+  /*
+  return (
+    <Fragment>
+      <h1>리액트 안녕</h1>
+      <h2>잘 동작하니?</h2>
+    </Fragment>
+  );
+  */
+
+  /*
+  return (
+    <div>
+      <h1>리액트 안녕</h1>
+      <h2>잘 동작하니?</h2>
+    </div>
+  );
+  */
+
+  return (
+    <div>
+      <h1>리액트 안녕</h1>
+      <h2>잘 동작하니?</h2>
+      <h2>감사합니다.</h2>
+      <h2>행복합니다.</h2>
+    </div>
   );
 }
 
