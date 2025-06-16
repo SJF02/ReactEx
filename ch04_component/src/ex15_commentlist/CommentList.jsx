@@ -24,7 +24,8 @@ const comments = [
   },
   {
     name: "L론허바드",
-    comment: "절대 어제를 후회하지 마라. 인생은 오늘의 내 안에 있고 내일은 스스로 만드는것이다.",
+    comment:
+      "절대 어제를 후회하지 마라. 인생은 오늘의 내 안에 있고 내일은 스스로 만드는것이다.",
   },
   {
     name: "허버드",
@@ -35,10 +36,12 @@ const comments = [
 function CommentList(props) {
   return (
     <div>
-      {comments.map((elem) => {
-        const { name, comment } = elem;
-        return <Comment name={name} comment={comment} />;
-      })}
+      {
+        comments.map((elem) => {
+            const { name, comment } = elem;
+            return <Comment name={name} comment={comment} />;
+        })
+      }
     </div>
   );
 }
