@@ -14,7 +14,8 @@ import "./App.css";
 // import Comment from "./ex11_extraction/Comment";
 // import Comment from "./ex12_extraction/Comment";
 // import CommentList from "./ex13_commentlist/CommentList";
-import CommentList from "./ex14_commentlist/CommentList";
+// import CommentList from "./ex14_commentlist/CommentList";
+import CommentList from "./ex15_commentlist/CommentList";
 
 function App() {
   // return (
