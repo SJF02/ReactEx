@@ -10,7 +10,9 @@ import "./App.css";
 // import Team from "./ex07_composition/Team";
 // import Comment from "./ex08_extraction/Comment";
 // import Comment from "./ex09_extraction/Comment";
-import Comment from "./ex10_extraction/Comment";
+// import Comment from "./ex10_extraction/Comment";
+// import Comment from "./ex11_extraction/Comment";
+import Comment from "./ex12_extraction/Comment";
 
 function App() {
   // return (
