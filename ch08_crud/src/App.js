@@ -1,24 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+// import SubApp from './ex01_full_html/SubApp';
+// import SubApp from './ex02_divide/SubApp';
+import SubApp from './ex03_divide/SubApp';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SubApp/>
   );
 }
 
