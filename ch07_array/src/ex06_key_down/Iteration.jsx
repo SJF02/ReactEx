@@ -39,9 +39,14 @@ const Iteration = () => {
     setInputText("");
   };
 
+  const onKeyDown = (e)=>{
+    // Enter키가 눌렸을 때 onClick함수 호출
+    if(e.key === 'Enter') onClick();
+  }
+
   return (
     <>
-      <input value={inputText} onChange={onChange} />
+      <input value={inputText} onChange={onChange} onKeyDown={onKeyDown}/>
       <button onClick={onClick}>추가</button>
       <ul>{nameList}</ul>
     </>
