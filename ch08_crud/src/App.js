@@ -6,7 +6,8 @@ import './App.css';
 // import SubApp from './ex04_props/SubApp';
 // import SubApp from './ex05_list/SubApp';
 // import SubApp from './ex06_nav_list/SubApp';
-import SubApp from './ex07_nav_list/SubApp';
+// import SubApp from './ex07_nav_list/SubApp';
+import SubApp from './ex08_header_event/SubApp';
 
 
 function App() {
