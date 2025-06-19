@@ -24,7 +24,7 @@ class Notification extends Component{
     }
 
     componentDidMount(){
-        console.log(`${this.props.id} Notification : componentDidMound()`);
+        console.log(`${this.props.id} Notification : componentDidMount()`);
     }
     componentDidUpdate(){
         console.log(`${this.props.id} Notification : componentDidUpdate()`);
