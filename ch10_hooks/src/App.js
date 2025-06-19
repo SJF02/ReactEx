@@ -8,7 +8,8 @@ import './App.css';
 // import Info from './ch06_useEffect/Info';
 // import Info from './ch07_useEffect/Info';
 // import Info from './ch08_useEffect/Info';
-import ParentInfo from './ch08_useEffect/ParentInfo';
+// import ParentInfo from './ch08_useEffect/ParentInfo';
+import Counter from './ch09_useReducer/Counter';
 
 function App() {
   return (
@@ -16,7 +17,9 @@ function App() {
 
     // <Info />
 
-    <ParentInfo />
+    // <ParentInfo />
+
+    <Counter />
   );
 }
 
