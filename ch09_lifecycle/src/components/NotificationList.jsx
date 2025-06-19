@@ -29,13 +29,14 @@ class NotificationList extends Component{
             notifications: [],
         };
 
-        console.log("NotificationList 생성자");
+        // console.log("NotificationList 생성자");
     }
 
-    // Mouse가 완료되는 시점에 호출(컴포넌트가 dom에 연결), 주로 동작 초기화시 많이 사용한다.
+    // Mount가 완료되는 시점에 호출(컴포넌트가 dom에 연결), 주로 동작 초기화시 많이 사용한다.
     componentDidMount(){
         const { notifications } = this.state;
 
+        // 1초 주기로 타이머 동작
         this.timer = setInterval(()=>{
             if(notifications.length < reservedNotifications.length){
                 const index = notifications.length;
@@ -52,18 +53,18 @@ class NotificationList extends Component{
             }
         }, 1000);
 
-        console.log("NotificationList-componentDidMount()");
+        // console.log("NotificationList-componentDidMount()");
     }
 
     // Unmount될 때 호출(종료 시점)
     componentWillUnmount(){
         if(this.timer) clearInterval(this.timer);
-        console.log("NotificationList-componentWillUnmount()");
+        // console.log("NotificationList-componentWillUnmount()");
     }
 
     // 화면을 그려야 할 때(시작하고 나서, state가 변경될 때)
     render(){
-        console.log("NotificationList-render()");
+        // console.log("NotificationList-render()");
         return (
             <div>
                 {this.state.notifications.map((notification)=>{

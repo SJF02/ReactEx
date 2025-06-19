@@ -34,7 +34,7 @@ class Notification extends Component{
     }
 
     render(){
-        console.log(`${this.props.id} Notificatioin : render()`);
+        console.log(`${this.props.id} Notification : render()`);
         return (
             <div style={styles.wrapper}>
                 <span style={styles.messageText}>{this.props.message}</span>
