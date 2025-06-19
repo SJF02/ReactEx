@@ -9,7 +9,8 @@ import './App.css';
 // import Info from './ch07_useEffect/Info';
 // import Info from './ch08_useEffect/Info';
 // import ParentInfo from './ch08_useEffect/ParentInfo';
-import Counter from './ch09_useReducer/Counter';
+// import Counter from './ch09_useReducer/Counter';
+import Info from './ch10_useReducer/Info';
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
 
     // <ParentInfo />
 
-    <Counter />
+    // <Counter />
+
+    <Info />
   );
 }
 
