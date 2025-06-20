@@ -21,6 +21,7 @@ v2버전 이후부터는 자동으로 중복되지 않은 고유한 이름으로
 const CSSModule = () => {
   console.log(styles);
   console.log(styles.wrapper);
+  console.log(second.wrapper);
 
   return (
     <>
