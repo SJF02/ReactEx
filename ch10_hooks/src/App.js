@@ -13,21 +13,23 @@ import './App.css';
 // import Info from './ch10_useReducer/Info';
 // import Average from './ch11_useMemo/Average';
 // import Average from './ch12_useMemo/Average';
-import Average from './ch13_useCallback/Average';
+// import Average from './ch13_useCallback/Average';
+// import Average from './ch14_useRef/Average';
+// import Info from './ch15_useCustomHook/Info';
+// import Spec from './ch15_useCustomHook/Spec';
+import ClassRoom from './ch16_useCustomHook/ClassRoom';
 
 function App() {
   return (
     // <Counter />
-
     // <Info />
-
     // <ParentInfo />
-
     // <Counter />
-
     // <Info />
-
-    <Average />
+    // <Average />
+    // <Info />
+    // <Spec />
+    <ClassRoom />
   );
 }
 
