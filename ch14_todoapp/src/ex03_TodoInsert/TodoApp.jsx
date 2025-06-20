@@ -1,9 +1,10 @@
 import TodoTemplate from "./TodoTemplate";
+import TodoInsert from "./TodoInsert";
 
 const TodoApp = (props) => {
   return (
     <TodoTemplate>
-      <div>TodoInsert</div>
+      <TodoInsert />
       <div>TodoList</div>
     </TodoTemplate>
   );
