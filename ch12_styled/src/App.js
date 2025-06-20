@@ -8,8 +8,11 @@ import "./App.css";
 // import PrimaryButton from './ex06_styled/PrimaryButton';
 // import PrimaryButton from './ex07_styled/PrimaryButton';
 // import PrimaryButton from './ex08_styled/PrimaryButton';
-import PrimaryButton from "./ex09_styled/PrimaryButton";
-import SecondButton from "./ex09_styled/SecondButton";
+// import PrimaryButton from "./ex09_styled/PrimaryButton";
+// import SecondButton from "./ex09_styled/SecondButton";
+// import Blocks from "./ex10_styled/Blocks";
+// import Blocks from "./ex11_styled/Blocks";
+import Blocks from "./ex12_styled/Blocks";
 
 function App() {
   return (
@@ -23,11 +26,25 @@ function App() {
     //   <PrimaryButton>감사합니다</PrimaryButton>
     // </>
 
+    // <>
+    //   <PrimaryButton primary>감사합니다</PrimaryButton>
+    //   <PrimaryButton>감사합니다</PrimaryButton>
+    //   <SecondButton primary>Happy ^^</SecondButton>
+    //   <SecondButton>Good~</SecondButton>
+    // </>
+
+    // <Blocks />
+
+    // <>
+    //   <Blocks />
+    //   <Blocks column />
+    //   <Blocks stretch />
+    //   <Blocks baseline />
+    // </>
+
     <>
-      <PrimaryButton primary>감사합니다</PrimaryButton>
-      <PrimaryButton>감사합니다</PrimaryButton>
-      <SecondButton primary>Happy ^^</SecondButton>
-      <SecondButton>Good~</SecondButton>
+      <Blocks />
+      <Blocks column />
     </>
   );
 }
