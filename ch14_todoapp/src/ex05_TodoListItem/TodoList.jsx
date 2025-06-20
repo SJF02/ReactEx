@@ -1,11 +1,12 @@
 import "./TodoList.scss";
+import TodoListItem from "./TodoListItem";
 
 const TodoList = ()=>{
     return(
         <div className="TodoList">
-            <div>TodoListItem</div>
-            <div>TodoListItem</div>
-            <div>TodoListItem</div>
+            <TodoListItem />
+            <TodoListItem />
+            <TodoListItem />
         </div>
     )
 }
