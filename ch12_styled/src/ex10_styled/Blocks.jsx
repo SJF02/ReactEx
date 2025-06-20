@@ -33,4 +33,21 @@ const blockItems = [
         backgroundColor: "darkblue",
         margin: "10px"
     },
-]
+];
+
+const Blocks = (props)=>{
+    return (
+        <Wrapper>
+            {blockItems.map((blockItem)=>{
+                return (
+                    <Block margin={blockItem.margin}
+                            padding={blockItem.padding}
+                            backgroundColor={blockItem.backgroundColor}
+                    >{blockItem.label}</Block>
+                )
+            })}
+        </Wrapper>
+    )
+}
+
+export default Blocks;
