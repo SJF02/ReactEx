@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 
 const getAverage = (numbers) => {
   console.log("평균값 계산 중...");
@@ -10,6 +10,19 @@ const getAverage = (numbers) => {
 const Average = () => {
   const [list, setList] = useState([]);
   const [number, setNumber] = useState("");
+
+  /**
+   * useMemo는 최적화시 사용한다.
+   * 즉, 연산량을 감소시킬 때 사용한다.
+   * 
+   * 아래 문법은, 2번째 인자에 등록한 [list]를 통해
+   * list변화시에만 아래 useMemo내부의 함수가 동작한다.
+   * 그러므로 이제 list가 변할 때, 즉 setList가 호출되면
+   * useMemo내의 getAverage(list)가 동작해서 avg의 업데이트가
+   * 이루어지지만, number가 변할 때, 즉 setNumber가 호출될때는
+   * avg의 업데이트가 일어나지 않게 된다.
+   */
+  const avg = useMemo(()=>getAverage(list), [list]);
 
   const onChange = (e) => {
     setNumber(e.target.value);
@@ -32,17 +45,7 @@ const Average = () => {
         })}
       </ul>
       <div>
-        {/*         
-        getAverage는 list가 변했을 때만 평균을 계산하기 위해 호출되는 것이 좋다.
-        하지만 list, number 모두 useState로 만들어졌기 때문에
-        number가 변해도 Re-Rendering이 발생하므로
-        불필요하게 아래 getAverage(list)도 호출되게 된다.
-        Application이 만들어질 때 수많은 Component의 조합으로 구성되는데
-        Component들의 작은 성능 차이는 결국 전체 Application의 차이를
-        가져오게 된다.
-        이럴 때 useMemo를 사용하면 성능을 향상할 수 있다. 
-        */}
-        <b>평균값: </b> {getAverage(list)}
+        <b>평균값: </b> {avg}
       </div>
     </div>
   );

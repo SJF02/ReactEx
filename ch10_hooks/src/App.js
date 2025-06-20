@@ -10,7 +10,9 @@ import './App.css';
 // import Info from './ch08_useEffect/Info';
 // import ParentInfo from './ch08_useEffect/ParentInfo';
 // import Counter from './ch09_useReducer/Counter';
-import Info from './ch10_useReducer/Info';
+// import Info from './ch10_useReducer/Info';
+// import Average from './ch11_useMemo/Average';
+import Average from './ch12_useMemo/Average';
 
 function App() {
   return (
@@ -22,7 +24,9 @@ function App() {
 
     // <Counter />
 
-    <Info />
+    // <Info />
+
+    <Average />
   );
 }
 
