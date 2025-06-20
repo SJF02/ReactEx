@@ -1,3 +1,5 @@
+// npm install classnames 를 설치해야 함
+
 import styles from "./CSSModule.module.css";
 import second from "./CSSSecond.module.css";
 import classNames from "classnames/bind";
