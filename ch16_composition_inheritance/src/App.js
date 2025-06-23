@@ -7,8 +7,11 @@ import './App.css';
 // import WelcomeDesc from './ex02_containment/WelcomeDesc';
 // import WelcomeDialog from './ex02_containment/WelcomeDialog';
 
-import AlramDialog from './ex03_specialization/AlramDialog';
-import WelcomeDialog from './ex03_specialization/WelcomeDialog';
+// import AlramDialog from './ex03_specialization/AlramDialog';
+// import WelcomeDialog from './ex03_specialization/WelcomeDialog';
+
+import ProfileCard from './ex04_inheritance/ProfileCard';
+import CookCard from './ex04_inheritance/CookCard';
 
 function App() {
   return (
@@ -22,11 +25,15 @@ function App() {
     //           left={<WelcomeDesc npx={3} color="red" />}
     //           right={<WelcomeDialog npx={3} color="blue" />} />
 
-    <div>
-      <AlramDialog />
-      <WelcomeDialog />
-    </div>
+    // <div>
+    //   <AlramDialog />
+    //   <WelcomeDialog />
+    // </div>
 
+    <div>
+      <ProfileCard />
+      <CookCard />
+    </div>
   );
 }
 
