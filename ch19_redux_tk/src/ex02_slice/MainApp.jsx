@@ -45,7 +45,7 @@ const Counter = () => {
       <hr />
       <div>{mCount}</div>
       <button onClick={() => dispatch({ type: "counterSlice/down", step: 2 })}>
-        +
+        -
       </button>
       <hr />
       <div>{str}</div>
