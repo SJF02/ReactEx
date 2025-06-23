@@ -21,6 +21,9 @@ const SubApp = () => {
             <Route path="/" element={<Home/>} />
             <Route path="/topics" element={<Topics/>} />
             <Route path="/contact" element={<Contact/>} />
+
+            {/* 위의 주소를 제외한 나머지는 모두 아래에서 처리한다. */}
+            <Route path="/*" element={"Not Found"} />
         </Routes>
       </div>
     </BrowserRouter>
