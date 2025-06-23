@@ -10,7 +10,7 @@ const Calculator = (props)=>{
         <fieldset>
             <legend>섭씨 온도를 입력하세요</legend>
             <input value={temperature} onChange={handleChange} />
-            <BoilingVerdict celcius={parseFloat(temperature)} />
+            <BoilingVerdict celsius={parseFloat(temperature)} />
         </fieldset>
     )
 }
